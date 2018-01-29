@@ -1,0 +1,44 @@
+body{
+	margin: 0;
+	font-family: "Trebushet MS";
+	background-color: #f4f4f4;
+}
+
+.hero{
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 400px;
+	top: 200px;
+	opacity: 1;
+	transition: .3s;
+}
+
+.hero.-invisible{
+	opacity: 0;
+}
+
+.hero-pic{
+	max-width: 100%;
+}
+
+.control-panel{
+	position: absolute;
+	top: 59%;
+	left: 32%;
+	transform: translate(-50%,);
+	background-color: black;
+	border-radius: 10px;
+	width: 500px;
+	min-height: 250px;
+	padding:70px;
+}
+.bubble{
+	position: absolute;
+	top: 170px;
+	left: 300px;
+	height: 100px;
+	width: 400px;
+	background-color: white;
+	border-radius: 140px;
+}
