@@ -1,14 +1,18 @@
 $(document).ready(function() {
 
-	var heroSpeech = 'Мы не жалкие букашки супер ниндзя черепашки!';
-
-	$('.js-showHide').click(function(){
-		$('.hero').toggleClass('-invisible');
+	$('.js-sayThat').click(function(){
+		showbubble($('.js-text1').val() + $('.js-text2').val())
 	});
 
-	$('.js-hello').click(function(){
-		$('.bubble').text(heroSpeech);
-	});
+	function showbubble(text) {
+		$('.bubble').text(text);
+		$('.bubble').addClass('-visible');
+
+
+		setTimeout(function() {
+ 			$('.bubble').removeClass('-visible');
+		}, 2000);
+	}
 
 
 });
