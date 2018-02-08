@@ -50,7 +50,19 @@ body{
 	opacity: 1;
 }
 
-.input, button{
+.bubble:before {
+	position: absolute;
+	display: block;
+	content: "";
+	background-color: white;
+	width: 15px;
+	height: 15px;
+	bottom: 0;
+	left: 0;
+}
+
+
+input, button{
  
 	border-radius: 2px;
 	padding: 4px;
@@ -60,20 +72,20 @@ body{
 	border: none;
 }
 
-.input{
+input{
 
 margin: 0 20px 0 20px;
 }
 
-.button{
+button{
 	background-color: white;
 	color:red;
 }
 
-.button:hover{
+button:hover{
 	background-color: #f4f4f4;
 }
 
-.button:active{
+button:active{
 	background-color: red;
 }
